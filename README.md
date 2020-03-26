@@ -6,6 +6,9 @@ AWS Amplify Hands-on
 $ git clone git@github.com:keijiro-okamura/amplify-handson.git
 $ cd amplify-handson
 $ docker-compose up -d
+$ docker exec -it amplify_handson_container /bin/bash
+$ cd myamplifyproject
+$ npm install
 ```
 
 ## npm ビルドインサーバ起動
@@ -18,6 +21,7 @@ $ docker exec -it amplify_handson_container /bin/bash
 
 #ここからコンテナ内
 $ cd myamplifyproject
+# ビルドインサーバ起動
 $ npm run serve
 ```
 これで`http://localhost:8080/`にアクセスしてVueのWelcomeページが表示されたら環境構築は完了です。
